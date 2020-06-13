@@ -153,14 +153,14 @@
   </footer>
   <script type="text/javascript">
 
-    const ipad = window.matchMedia('screen and (max-width: 767px)');
-
     const menu = document.querySelector('.menu');
     const burgerButton = document.querySelector('#burger-menu');
 
-
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
 
     ipad.addListener(validation);
+
+    burgerButton.addEventListener('click', hideShow);
 
     function validation(event){
       if(event.matches){
