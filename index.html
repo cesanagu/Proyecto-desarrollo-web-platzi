@@ -1,182 +1,278 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leon-Esteban</title>
-  <link rel="icon" type="image" href="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/favicon.png">
-</head>
-<body>
-  <i class="icon-meni burger-button" id="burger-menu"></i>
-<header class="header">
-  <div class="container">
-  <figure class="logo">
-    <img src="imagesss/logo.webp" height="50px" alt="Logo">
-  </figure>
-  <nav class="menu">
-    <ol>
-      <li>
-        <a href="#portafolio">Portafolio</a>
-      </li>
-      <li>
-        <a href="#eventos">Experiencia</a>
-      </li>
-      <li>
-        <a href="#contacto">Trabajemos juntos</a>
-      </li>
-    </ol>
-  </nav>
-    </div>
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Leon-Esteban</title>
+    <link rel="icon" type="image" href="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/favicon.png" />
+    <style>
+      @font-face{font-family:"icomoon";src:url("../fonts/icomoon.eot?d6v1wx");src:url("../fonts/icomoon.eot?d6v1wx#iefix") format("embedded-opentype"),url("../fonts/icomoon.ttf?d6v1wx") format("truetype"),url("../fonts/icomoon.woff?d6v1wx") format("woff"),url("../fonts/icomoon.svg?d6v1wx#icomoon") format("svg");font-weight:normal;font-style:normal;font-display:block}[class^="icon-"]{font-family:"icomoon"!important;speak:never;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-meni:before{content:"\e9bd"}body{font-family:"Source Sans Pro",system-ui;margin:0}h1,h2,h3,h6{font-family:"Fjalla One",system-ui;font-weight:normal}h1{font-size:40px;line-height:1.5;letter-spacing:-0.2px;color:white;margin:0;max-width:500px}h1 strong{color:#026fff}h2{color:#026fff;text-transform:uppercase;font-family:"Source Sans Pro",system-ui;font-weight:bold;font-size:24px;margin-bottom:40px}.hero{height:300px;background-color:#1d252c;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}.hero-image{object-fit:cover}.portfolio{background:#fafafa;padding:20px}.project{border:1px solid gray;border-radius:10px;margin-bottom:15px;padding:20px;background:white;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}.project-course,.project-date,.project-url{margin:10px 0}.project-description{font-size:20px}.project strong{font-family:"Fjalla One",system-ui}.project-title{font-size:30px;margin-top:0;margin-bottom:10px}.project-details{width:50%}.project-imageContainer{width:50%}.project-imageContainer img{max-width:100%}header{background-color:#1d252c;color:white;display:flex;height:70px;align-items:center;justify-content:space-between;flex-wrap:wrap}ol{margin:0;padding:0;list-style:none}figure{margin:0}.header a{color:white;text-decoration:none}.menu{height:inherit}.header ol{display:flex;height:inherit}.header ol li{height:inherit}.header a{display:flex;align-items:center;height:inherit;padding:0 10px}.container{max-width:1000px;width:100%;margin:0 auto;display:inherit;justify-content:inherit;align-items:inherit;height:inherit;flex-wrap:inherit}.burger-button{width:40px;height:40px;border-radius:50%;display:none;background-color:rgba(0,0,0,0.8);line-height:40px;text-align:center;position:fixed;z-index:4;left:5px;top:5px;color:#fff}@media screen and (max-width:1023px){.hero{height:auto;position:relative;overflow:hidden;padding:2em}.hero-image{position:absolute;z-index:1;left:0;right:0;bottom:0;top:0;width:100%}h1{font-size:2em;z-index:2}}@media screen and (max-width:767px){h2{font-size:1em;margin:0.8em 0}.burger-button{display:block}.header{display:block;height:auto}.header ol{display:block}.header ol li{height:50px}.header a{justify-content:center;height:40px;font-size:2em;text-decoration:underline;margin-bottom:0.5em}.menu ol{height:auto}.header .logo{text-align:center}.menu{position:fixed;background:rgba(5,111,255,0.8);z-index:3;top:0;left:-100vw;bottom:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center}.project{display:block}.project-imageContainer,.project-details{width:auto}.project-course,.project-date,.project-url{margin:0.3em 0}.project-title{font-size:1.5em;margin-bottom:0.3em}.project-url{font-size:1em}.project-course{font-size:1.7em}.project-date{font-size:1em}.project-description{font-size:1em}.project-imageContainer{text-align:center}}@media screen and (max-width:480px){h1{font-size:1.5em}.project-details{font-size:14px}.logo{height:55px}}@media screen and (max-width:320px){.hero{padding:2em 1em}}
+    </style>
+  </head>
 
-<section class="hero">
-  <div class="container">
-  <h1>Hola soy <strong>Leonidas Esteban</strong> <br><strong>Desarrollador Frontend</strong> <br>Dandole duro</h1>
-  <img class="hero-image" src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/hero.jpg" width="500px" height="300px" alt="imgen-principal">
-  </div>
-</section>
-
-<section id="portafolio" class="portfolio">
-  <div class="container">
-  <h2>Portafolio (Proyectos destacados)</h2>
-  <article class="project">
-  <div class="project-details">
-  <h3 class="project-title">Platzi Video</h3>
-  <h6 class="project-course">React Native / React</h6>
-  <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-  <p class="project-url"><small><strong>Puedes verlo en:</strong>platzi.com</small></p>
-  <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at posuere libero. Nullam cursus sapien eu est tempus tincidunt. Sed iaculis, nunc vel pulvinar mattis, ipsum mauris varius diam, sed vulputate diam lacus at urna.</p>
-  </div>
-  <figure class="project-imageContainer">
-  <img class="project-image" src="imagesss/platzi-video-react-native.webp" width="500" alt="proyecto-curso-react">
-  </figure>
-  </article>
-
-    <article class="project">
-  <div class="project-details">
-  <h3 class="project-title">Platzi Video</h3>
-  <h6 class="project-course">React Native / React</h6>
-  <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-  <p class="project-url"><small><strong>Puedes verlo en:</strong>platzi.com</small></p>
-  <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at posuere libero. Nullam cursus sapien eu est tempus tincidunt. Sed iaculis, nunc vel pulvinar mattis, ipsum mauris varius diam, sed vulputate diam lacus at urna.</p>
-  </div>
-  <figure class="project-imageContainer">
-  <img class="project-image" src="imagesss/platzi-video-react-native.webp" width="500" alt="proyecto-curso-react">
-  </figure>
-</article>
-  </div>
-</section>
-
-
-
-  <div class="container">
-  <h2 class="event-list-title"  id="eventos">Más experiencia</h2>
-  </div>
-  <section class="event-list">
-  <div class="container">
-  <article class="event">
-    <figure class="event-imageContainer">
-      <div class="flex-video">
-      <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <body>
+    <i class="icon-meni burger-button" id="burger-menu"></i>
+    <header class="header">
+      <div class="container">
+        <figure class="logo">
+          <img src="imagesss/logo.webp" height="50px" alt="Logo" />
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a href="#eventos">Experiencia</a>
+            </li>
+            <li>
+              <a href="#contacto">Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
       </div>
-      <!-- <img  class="event-image" src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/platzi-conf.jpg" width="500px" alt="conf"> -->
-    </figure>
-    <div class="event-detail">
-      <h3 class="event-title">PlatziConf México 2018</h3>
-      <p class="event-description">el evento mas grandeeeeeeeeeeeeeeeeeeee</p>
-      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Charla</a>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>
+          Hola soy <strong>Leonidas Esteban</strong> <br /><strong
+            >Desarrollador Frontend</strong
+          >
+          <br />Dandole duro
+        </h1>
+        <img
+          class="hero-image"
+          src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/hero.jpg"
+          width="500px"
+          height="300px"
+          alt="imgen-principal"
+        />
+      </div>
+    </section>
+
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <h2>Portafolio (Proyectos destacados)</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> 01/07/2018</small>
+            </p>
+            <p class="project-url">
+              <small><strong>Puedes verlo en:</strong>platzi.com</small>
+            </p>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at
+              posuere libero. Nullam cursus sapien eu est tempus tincidunt. Sed
+              iaculis, nunc vel pulvinar mattis, ipsum mauris varius diam, sed
+              vulputate diam lacus at urna.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="imagesss/platzi-video-react-native.webp"
+              width="500"
+              alt="proyecto-curso-react"
+            />
+          </figure>
+        </article>
+
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> 01/07/2018</small>
+            </p>
+            <p class="project-url">
+              <small><strong>Puedes verlo en:</strong>platzi.com</small>
+            </p>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at
+              posuere libero. Nullam cursus sapien eu est tempus tincidunt. Sed
+              iaculis, nunc vel pulvinar mattis, ipsum mauris varius diam, sed
+              vulputate diam lacus at urna.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="imagesss/platzi-video-react-native.webp"
+              width="500"
+              alt="proyecto-curso-react"
+            />
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <div class="container">
+      <h2 class="event-list-title" id="eventos">Más experiencia</h2>
     </div>
-  </article>
-  <article class="event">
-    <figure class="event-imageContainer">
-      <img  class="event-image" src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/platzi-conf.jpg" width="500px" alt="conf">
-    </figure>
-    <div class="event-detail">
-      <h3 class="event-title">PlatziConf México 2018</h3>
-      <p class="event-description">el evento mas grandeeeeeeeeeeeeeeeeeeee</p>
-      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Charla</a>
-    </div>
-  </article>
-  <article class="event">
-    <figure class="event-imageContainer">
-      <img  class="event-image" src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/platzi-conf.jpg" width="500px" alt="conf">
-    </figure>
-    <div class="event-detail">
-      <h3 class="event-title">PlatziConf México 2018</h3>
-      <p class="event-description">el evento mas grandeeeeeeeeeeeeeeeeeeee</p>
-      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Charla</a>
-    </div>
-  </article>
-  <article class="event">
-    <figure class="event-imageContainer">
-      <img  class="event-image" src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/platzi-conf.jpg" width="500px" alt="conf">
-    </figure>
-    <div class="event-detail">
-      <h3 class="event-title">PlatziConf México 2018</h3>
-      <p class="event-description">el evento mas grandeeeeeeeeeeeeeeeeeeee</p>
-      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Charla</a>
-    </div>
-  </article>
-  </div>
-</section>
-  <section class="contact" id="contacto">
-  <div class="container">
-  <form class="form-email" action="/suscripcion/">
-    <h3>¿Creamos algo juntos?</h3>
-    <input type="text" placeholder="Déjame tu mail" id="email">
-    <button>Enviar</button>
-  </form>
-  <div class="social">
-    <a href="https://twitter.com" class="icon-twitter"></a>
-    <a href="https://facebook.com" class="icon-facebook"></a>
-    <a href="https://github.com" class="icon-github"></a>
-    <a href="https://instagram.com" class="icon-instagram"></a>
-  </div>
-  </div>
-</section>
+    <section class="event-list">
+      <div class="container">
+        <article class="event">
+          <figure class="event-imageContainer">
+            <div class="flex-video">
+              <iframe
+                class="youtube-video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/LoKvxCSZw5w"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf México 2018</h3>
+            <p class="event-description">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate, amet atque iure repellat animi magnam facilis.
+            </p>
+            <a
+              class="event-url"
+              href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+              target="_blank"
+              >Ver Charla</a
+            >
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/platzi-conf.jpg"
+              width="500px"
+              alt="conf"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf México 2018</h3>
+            <p class="event-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis maxime quibusdam incidunt necessi incidunt necessi.
+            </p>
+            <a
+              class="event-url"
+              href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+              target="_blank"
+              >Ver Charla</a
+            >
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/platzi-conf.jpg"
+              width="500px"
+              alt="conf"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf México 2018</h3>
+            <p class="event-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis maxime quibusdam incidunt necessi incidunt necessi.
+            </p>
+            <a
+              class="event-url"
+              href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+              target="_blank"
+              >Ver Charla</a
+            >
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="https://static.platzi.com/media/tmp/class-files/git/desarrollo-web-portafolio/desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/platzi-conf.jpg"
+              width="500px"
+              alt="conf"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf México 2018</h3>
+            <p class="event-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis maxime quibusdam incidunt necessi incidunt necessi.
+            </p>
+            <a
+              class="event-url"
+              href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+              target="_blank"
+              >Ver Charla</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="contact" id="contacto">
+      <div class="container">
+        <form class="form-email" action="/suscripcion/">
+          <h3>¿Creamos algo juntos?</h3>
+          <input type="text" placeholder="Déjame tu mail" id="email" />
+          <button>Enviar</button>
+        </form>
+        <div class="social">
+          <a href="https://twitter.com" class="icon-twitter"></a>
+          <a href="https://facebook.com" class="icon-facebook"></a>
+          <a href="https://github.com" class="icon-github"></a>
+          <a href="https://instagram.com" class="icon-instagram"></a>
+        </div>
+      </div>
+    </section>
 
-<footer class="footer">
-  <div class="container">
-  <div>
-    <p>Curso de desarrollo web 2018 <img src="imagesss/platzi.png" alt="platzi" width="80px"></p>
-  </div>
-  <div>
-    <p>
-    Designed with <\3 by <a href="https://twitter.com/@thespianartist">@thespianartist</a>
-    </p>
-  </div>
-  </div>
-  </footer>
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="proyectuno/estilosss.css">
-  <script type="text/javascript">
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>
+            Curso de desarrollo web 2018
+            <img src="imagesss/platzi.png" alt="platzi" width="80px" />
+          </p>
+        </div>
+        <div>
+          <p>
+            Designed with &#10084 by
+            <a href="https://twitter.com/@thespianartist">@thespianartist</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="proyectuno/estilosss.css" />
 
-    const menu = document.querySelector('.menu');
-    const burgerButton = document.querySelector('#burger-menu');
+    <script type="text/javascript">
+      const menu = document.querySelector(".menu");
+      const burgerButton = document.querySelector("#burger-menu");
 
-    const ipad = window.matchMedia('screen and (max-width: 767px)');
+      const ipad = window.matchMedia("screen and (max-width: 767px)");
 
-    ipad.addListener(validation);
+      ipad.addListener(validation);
 
-    burgerButton.addEventListener('click', hideShow);
+      burgerButton.addEventListener("click", hideShow);
 
-    function validation(event){
-      if(event.matches){
-        burgerButton.addEventListener('click', hideShow);
-      }  else {
-        burgerButton.removeEventListener('click', hideShow);
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener("click", hideShow);
+        } else {
+          burgerButton.removeEventListener("click", hideShow);
+        }
       }
-    }
 
-    function hideShow() {
-      if (menu.classList.contains('is-active')) {
-        menu.classList.remove('is-active');
-      } else {
-        menu.classList.add('is-active');
+      function hideShow() {
+        if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+        } else {
+          menu.classList.add("is-active");
+        }
       }
-    }
-
-  </script>
-</body>
+    </script>
+  </body>
 </html>
